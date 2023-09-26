@@ -64,3 +64,17 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.message-connection {
+  min-width: 200px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.username {
+  padding: 5px 10px;
+  width: 200px;
+}
