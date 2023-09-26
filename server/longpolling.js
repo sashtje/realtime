@@ -12,16 +12,17 @@ app.use(express.json());
 
 app.get("/get-messages", (req, res) => {
   emitter.once("newMessage", (message) => {
+    res.status(200);
     res.json(message);
+    res.end();
   });
 });
 
 app.post("/new-messages", (req, res) => {
   const message = req.body;
   emitter.emit("newMessage", message);
-  console.log("answer", message);
 
-  res.status(200);
+  res.sendStatus(200);
 });
 
 app.listen(PORT, () => {
