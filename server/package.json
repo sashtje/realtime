@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon longpolling.js"
+    "start:longpolling": "nodemon longpolling.js",
+    "start:eventsource": "nodemon eventsource.js",
+    "start:websockets": "nodemon websockets.js"
   },
   "keywords": [],
   "author": "",
